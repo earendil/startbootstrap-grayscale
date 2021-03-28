@@ -10250,17 +10250,24 @@ body {
 }
 
 .about-section {
-  padding-top: 5rem;
+  padding-top: 10rem;
   background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
   padding-bottom: 10rem;
+}
+
+.about-section-d{
+    width: 80%;
+}
+
+.about-section-m{
+    width: 100%;
 }
 
 video {
     position: relative;
     bottom: 0;
     right: 0;
-    min-height: 75%;
-    min-width: 75%;
+    height: auto;
 }
 
 .projects-section {

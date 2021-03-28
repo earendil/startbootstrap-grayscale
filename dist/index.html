@@ -45,7 +45,12 @@
         </header>
         <!-- About-->
         <section class="about-section text-center" id="about">
-            <video autoplay muted loop controls="controls" src="assets/vid/main.mp4"></video>
+            <div class="d-lg-none">
+                <video class="about-section-m" autoplay muted loop controls="controls" src="assets/vid/main.mp4"></video>
+            </div>
+            <div class="d-none d-lg-block">
+                <video class="about-section-d" autoplay muted loop controls="controls" src="assets/vid/main.mp4"></video>
+            </div>
         </section>
         <!-- Projects-->
         <section class="projects-section bg-light" id="projects">
@@ -98,7 +103,7 @@
                 <div class="row">
                     <div class="col-md-10 col-lg-8 mx-auto text-center">
                         <i class="fas fa-hand-holding-usd fa-2x mb-2 text-white"></i>
-                        <h2 class="text-white mb-5">Help us keep his memory alive by supporting his family.</h2>
+                        <h2 class="text-white mb-5">Help us keep his memory alive.</h2>
                         <form class="form-inline d-flex" action="#">
                             <button class="btn btn-primary mx-auto" type="submit">Donate</button>
                         </form>
