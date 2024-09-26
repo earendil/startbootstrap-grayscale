@@ -10207,11 +10207,14 @@ body {
   height: auto;
   min-height: 35rem;
   padding: 15rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../assets/img/background1.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
   background-size: cover;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
 }
 .masthead h1 {
   font-family: "Varela Round", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -10227,6 +10230,18 @@ body {
   max-width: 20rem;
   font-size: 1rem;
 }
+@media (max-width: 500px) {
+    .masthead {
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../assets/img/capa.jpg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-attachment: scroll;
+          background-size: cover;
+          -o-background-size: cover;
+          -moz-background-size: cover;
+          -webkit-background-size: cover;
+    }
+}
 @media (min-width: 768px) {
   .masthead h1 {
     font-size: 4rem;
@@ -10237,6 +10252,14 @@ body {
   .masthead {
     height: 100vh;
     padding: 0;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.3) 0%, rgba(0, 0, 0, 0.7) 75%, #000000 100%), url("../assets/img/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
   }
   .masthead h1 {
     font-size: 6.5rem;
@@ -10250,11 +10273,24 @@ body {
 }
 
 .about-section {
-  padding-top: 10rem;
+  padding-top: 5rem;
   background: linear-gradient(to bottom, #000000 0%, rgba(0, 0, 0, 0.9) 75%, rgba(0, 0, 0, 0.8) 100%);
+  padding-bottom: 15rem;
 }
-.about-section p {
-  margin-bottom: 5rem;
+
+.about-section-d{
+    width: 80%;
+}
+
+.about-section-m{
+    width: 100%;
+}
+
+video {
+    position: relative;
+    bottom: 0;
+    right: 0;
+    height: auto;
 }
 
 .projects-section {
@@ -10286,7 +10322,7 @@ body {
 
 .signup-section {
   padding: 10rem 0;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%), url("../assets/img/bg-signup.jpg");
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.5) 75%, #000000 100%), url("../assets/img/ben.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
@@ -10342,4 +10378,24 @@ body {
 
 .footer {
   padding: 5rem 0;
+}
+
+.text-desc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.spc-btn {
+    padding: 0.5rem;
+    text-transform: unset;
+    letter-spacing: unset;
+}
+
+.btn-r {
+    float: right;
+}
+
+.btn-l {
+    float: left;
 }
